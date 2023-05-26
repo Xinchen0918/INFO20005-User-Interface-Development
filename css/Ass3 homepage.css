@@ -49,13 +49,19 @@ html {
   }
   *, *:before, *:after {
     box-sizing: inherit;
+    max-width: 100%;
   }
 
-nav{
+.navigation{
     margin-top: 0;
     font-size: 1.4rem;
     background-color: lightgreen;
-    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 120px;
+    justify-content:center;
+    max-width: 1440px;
+    overflow: hidden;
 }
 body{
     font-size: 1rem;
@@ -77,24 +83,59 @@ a{
 }
 
 .logo{
-    width: 10rem;
+    height: 120px;
+    width: 120px;
     background-color: green;
     padding-top: 2rem;
     padding-bottom: 2rem;
+    float: left;
 }
 
 
-.cluster{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-}
-
-.cluster > *{
-    margin: 0.5rem;
-}
 .feature__image{
     width: 15em;
+}
+
+
+
+.btn-nav{
+    margin: 2rem;
+}
+
+.large-pic{
+    max-width: 1440px;
+    height: 800px;
+    width: 1440px;
+}
+
+picture{
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+    height: 800px;
+}
+
+.division{
+    background-color: green;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 100px;
+    justify-content: center;
+    display: flex;
+}
+.division > p{
+    color: white;
+    font-size: 2em;
+    margin: auto;
+}
+.information{
+    display: grid;
+    background-color: lightgreen;
+}
+
+.information-pic{
+    width: 250px;
+    height: 250px;
+    border-radius: 20%;
+    border: 10px solid white;
 }
