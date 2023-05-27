@@ -42,7 +42,9 @@ table {
 	border-spacing: 0;
 }
 
-
+:root{
+    font-size: 16px;
+}
 
 html {
     box-sizing: border-box;
@@ -51,6 +53,12 @@ html {
     box-sizing: inherit;
     max-width: 100%;
   }
+
+nav{
+    position: fixed;
+    overflow: visible;
+    width: 100%;
+}
 
 .navigation{
     margin-top: 0;
@@ -117,20 +125,27 @@ picture{
 
 .division{
     background-color: green;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    border-top: 20px solid white;
+    border-bottom: 20px solid white;
     height: 100px;
     justify-content: center;
     display: flex;
 }
 .division > p{
     color: white;
-    font-size: 2em;
+    font-size: 2rem;
     margin: auto;
 }
+
+.aboutus{
+    background-color: lightgreen;
+}
+
 .information{
     display: grid;
-    background-color: lightgreen;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    justify-items: center;
 }
 
 .information-pic{
@@ -138,4 +153,100 @@ picture{
     height: 250px;
     border-radius: 20%;
     border: 10px solid white;
+}
+
+#information1{
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+#information2{
+    grid-row: 1/2;
+    grid-column: 2/3;
+}
+#informtion3{
+    grid-row: 1/2;
+    grid-column: 3/4;
+}
+#informtion4{
+    grid-row: 3/4;
+    grid-column: 1/2;
+}
+#informtion5{
+    grid-row: 3/4;
+    grid-column: 2/3;
+}
+#informtion6{
+    grid-row: 3/4;
+    grid-column: 3/4;
+}
+
+#aboutus1{
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+#aboutus2{
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+#aboutus3{
+    grid-row: 2/3;
+    grid-column: 3/4;
+}
+#aboutus4{
+    grid-row: 4/5;
+    grid-column: 1/2;
+}
+#aboutus5{
+    grid-row: 4/5;
+    grid-column: 2/3;
+}#aboutus6{
+    grid-row: 4/5;
+    grid-column: 3/4;
+}
+
+.menu{
+    background-color: lightgreen;
+    display: flex;
+    flex-direction: row;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.menu-pic{
+    height: 350px;
+    width: 350px;
+    border: 20px solid white;
+    margin: auto;
+}
+
+#menu-button1{
+    position: absolute;
+}
+#menu-button2{
+    position: absolute;
+}
+#menu-button3{
+    position: absolute;
+}
+#menu-button4{
+    position: absolute;
+}
+
+.gallery{
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+    background-color: lightgreen;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.gallery-pic{
+    height: 350px;
+    width: 350px;
+    border: 20px solid white;
+}
+
+footer{
+    background-color: lightgreen;
 }
