@@ -58,12 +58,13 @@ nav{
     position: fixed;
     overflow: visible;
     width: 100%;
+    z-index: 1;
 }
 
 .navigation{
     margin-top: 0;
     font-size: 1.4rem;
-    background-color: lightgreen;
+    background-color: rgba(202, 222, 192, 1);
     display: flex;
     flex-direction: row;
     height: 120px;
@@ -93,7 +94,7 @@ a{
 .logo{
     height: 120px;
     width: 120px;
-    background-color: green;
+    background-color: rgba(143, 166, 132, 1);
     padding-top: 2rem;
     padding-bottom: 2rem;
     float: left;
@@ -124,7 +125,7 @@ picture{
 }
 
 .division{
-    background-color: green;
+    background-color: rgba(115, 155, 115, 1);
     border-top: 20px solid white;
     border-bottom: 20px solid white;
     height: 100px;
@@ -138,7 +139,7 @@ picture{
 }
 
 .aboutus{
-    background-color: lightgreen;
+    background-color: rgba(209, 220, 204, 1);
 }
 
 .information{
@@ -205,7 +206,7 @@ picture{
 }
 
 .menu{
-    background-color: lightgreen;
+    background-color: rgba(209, 220, 204, 1);
     display: flex;
     flex-direction: row;
     padding-top: 30px;
@@ -219,24 +220,43 @@ picture{
     margin: auto;
 }
 
+.menu>button{
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: black solid 10px;
+    border-radius: 20%;
+    background-color: rgb(255, 255, 255, 0.65);
+}
+
 #menu-button1{
     position: absolute;
+    transform: translate(100px,130px);
+    border: rgba(156, 164, 135, 1) solid 8px;
+    
 }
 #menu-button2{
     position: absolute;
+    transform: translate(475px,130px);
+    border: rgba(134, 105, 80, 1) solid 8px;
 }
 #menu-button3{
     position: absolute;
+    transform: translate(850px,130px);
+    border: rgba(219, 187, 139, 1) solid 8px;
 }
 #menu-button4{
     position: absolute;
+    transform: translate(1235px,130px);
+    border: rgba(205, 188, 229, 1) solid 8px;
 }
 
 .gallery{
     display: flex;
     flex-direction: row;
     overflow: scroll;
-    background-color: lightgreen;
+    background-color: rgba(209, 220, 204, 1);
     padding-top: 30px;
     padding-bottom: 30px;
 }
@@ -248,5 +268,34 @@ picture{
 }
 
 footer{
-    background-color: lightgreen;
+    background-image: linear-gradient(rgba(204, 223, 131, 1), rgba(105, 104, 160, 0.5));
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+}
+footer>p{
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+.icon-group{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.icon{
+    height: 35px;
+    width: 35px;
+    margin: 20px;
+}
+.footer-logo{
+    width: 145px;
+    height: 55px;
+    align-self: center;
+    margin: 20px;
+    margin-top: 40px;
+    
+}
+.copyright{
+    margin-top: auto;
 }
