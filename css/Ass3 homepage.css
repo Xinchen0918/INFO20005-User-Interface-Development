@@ -32,6 +32,15 @@ footer, header, hgroup, menu, nav, section {
     font-family: Parisienne;
     src: url(../fonts/Parisienne/Parisienne-Regular.ttf);
 }
+@font-face{
+    font-family: Halant;
+    src: url(../fonts/Halant/Halant-Regular.ttf);
+}
+@font-face{
+    font-family: inter-medium;
+    src: url(../fonts/Inter/static/Inter-Medium.ttf);
+}
+
 body {
 	line-height: 1;
 }
@@ -80,6 +89,7 @@ nav{
     justify-content:center;
     max-width: 1440px;
     overflow: hidden;
+    min-width: 300px;
 }
 body{
     font-size: 1rem;
@@ -90,8 +100,16 @@ body{
 
 a{
     text-decoration: none;
-    color: inherit;
-    font-family: inter;
+    color: black;
+    font-family: inter-medium;
+    opacity: 43%;
+    font-size: 1.7rem;
+    transition-duration: 0.5s;
+}
+nav a:hover{
+    color: black;
+    opacity: 100%;
+    font-size: 2rem;
 }
 .btn{
     padding: 1rem;
@@ -110,25 +128,61 @@ a{
     float: left;
 }
 
+#next-pic{
+    align-self: center;
+    margin-left: 25px;
+    height: 100px;
+    width: 100px;
+    font-size: 5rem;
+    background-color: rgba(143, 166, 132, 1);
+    border-radius: 100%;
+    color: white;
+    border: white 5px solid;
+}
 
+#next-pic:hover{
+    background-color: rgba(143, 166, 132, 0.8);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#next-pic:active{
+    background-color: rgba(143, 166, 132, 0.5);
+}
+
+#prev-pic{
+    align-self: center;
+    margin-right: 25px;
+    height: 100px;
+    width: 100px;
+    font-size: 5rem;
+    background-color: rgba(143, 166, 132, 1);
+    border-radius: 50%;
+    color: white;
+    border: white 5px solid;
+}
+
+#prev-pic:hover{
+    background-color: rgba(143, 166, 132, 0.8);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#prev-pic:active{
+    background-color: rgba(143, 166, 132, 0.5);
+}
 
 
 .btn-nav{
     margin: 2rem;
 }
 
-.large-pic{
-    width: auto;
-
-}
 
 picture{
     display: flex;
     flex-direction: row;
     overflow: scroll;
-    height: 800px;
     justify-content: center;
     background-color: rgba(209, 220, 204, 1);
+    height: 800px;
 }
 
 .division{
@@ -148,31 +202,46 @@ picture{
 
 .aboutus{
     background-color: rgba(209, 220, 204, 1);
+    overflow: hidden;
 }
 
 .aboutus>p{
     display: flex;
     justify-content: center;
-    padding: 50px;
+    font-family: Halant;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 3rem;
+    overflow: hidden;
+    word-break: keep-all;
+    white-space: nowrap;
 }
 
 .information{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 0.7fr 1fr 0.7fr;
     justify-items: center;
 }
 
 .information-pic{
+    min-width: 250px;
     width: 250px;
     height: 250px;
     border-radius: 20%;
     border: 10px solid white;
+    object-fit: cover;
 }
 
 .information>p{
-    margin-left: 120px;
-    margin-right: 120px;
+    min-width: 250px;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-family: inter;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
 }
 
 #information1{
@@ -230,12 +299,15 @@ picture{
     flex-direction: row;
     padding-top: 30px;
     padding-bottom: 30px;
+    overflow: hidden;
 }
 
 .menu-pic{
     height: 350px;
     width: 350px;
+    min-width: 350px;
     border: 20px solid white;
+    display: block;
     margin: auto;
 }
 
@@ -285,6 +357,7 @@ picture{
     height: 350px;
     width: 350px;
     border: 20px solid white;
+    margin: 10px;
 }
 
 footer{

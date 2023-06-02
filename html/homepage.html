@@ -3,6 +3,7 @@
 <head>
     <title>Zero Mode </title>
     <link rel="stylesheet" href="../css/Ass3 homepage.css">
+    <script src="../js/javascipt.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 </head>
 
@@ -18,14 +19,17 @@
     </nav>
 
     <picture>
-        <img src="../images/Zero-Mode-24th-June_GRIFFIN-SIMM_Finals-41.jpeg" alt="" class="large-pic">
+        <input id="prev-pic" type="button" onclick="slide_pic_back()" value="<">
+        <img src="../images/Zero-Mode-24th-June_GRIFFIN-SIMM_Finals-41.jpeg" alt="" class="large-pic" id="slide-pic">
+        <input id="next-pic" type="button" onclick="slide_pic()" value=">">
     </picture>
     <div class="division">
         <p>About us</p>
     </div>
 
     <div class="aboutus">
-        <p>INNOVATIVE CAFE X MODERN ASIAN AUSTRALIAN RESTAURANT IN BOX HILL</p>
+        <p>INNOVATIVE CAFE X MODERN ASIAN AUSTRALIAN</p>
+        <p>RESTAURANT IN BOX HILL</p>
         <div class="information">
             <img src="../images/information1.jpeg" alt="" class="information-pic" id="information1">
             <img src="../images/information2.jpeg" alt="" class="information-pic" id="information2">
@@ -46,14 +50,10 @@
     </div>
 
     <div class="menu">
-        <img src="../images/menu1.jpeg" alt="" class="menu-pic">
-        <img src="../images/menu2.jpeg" alt="" class="menu-pic">
-        <img src="../images/menu3.jpeg" alt="" class="menu-pic">
-        <img src="../images/menu4.jpeg" alt="" class="menu-pic">
-        <button id="menu-button1">Daily Menu</button>
-        <button id="menu-button2">Dessert Menu</button>
-        <button id="menu-button3">Drink Menu</button>
-        <button id="menu-button4">Night Menu</button>
+        <img src="../images/dailymenu.png" alt="" class="menu-pic">
+        <img src="../images/dessertmenu.png" alt="" class="menu-pic">
+        <img src="../images/drinkmenu.png" alt="" class="menu-pic">
+        <img src="../images/nightmenu.png" alt="" class="menu-pic">
     </div>
     <div class="division">
         <p>Gallery</p>
