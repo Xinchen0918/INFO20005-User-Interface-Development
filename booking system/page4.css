@@ -1,5 +1,10 @@
+@font-face{
+    font-family: inter;
+    src: url(../fonts/Inter/Inter-VariableFont_slnt,wght.ttf)}
+
+
 *{
-    font-family: 'Inter', sans-serif;
+    font-family: inter, sans-serif;
 }
 h1{
     text-align: center;
