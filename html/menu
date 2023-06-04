@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang = "111">
+<head>
+    <title>Menu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+</head>
+
+<body>
+    <picture>
+        <img src="../images/daymenu2.png">
+        <img src="../images/daymenu1.png">
+    </picture>
+</body>

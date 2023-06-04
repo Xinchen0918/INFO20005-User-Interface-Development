@@ -40,6 +40,11 @@ footer, header, hgroup, menu, nav, section {
     font-family: inter-medium;
     src: url(../fonts/Inter/static/Inter-Medium.ttf);
 }
+@font-face{
+    font-family: inter-extrabold;
+    src: url(../fonts/Inter/static/Inter-ExtraBold.ttf);
+}
+
 
 body {
 	line-height: 1;
@@ -98,7 +103,7 @@ body{
     margin-right: 0;
 }
 
-a{
+nav a{
     text-decoration: none;
     color: black;
     font-family: inter-medium;
@@ -111,6 +116,13 @@ nav a:hover{
     opacity: 100%;
     font-size: 2rem;
 }
+
+nav a:active{
+    color: white;
+    opacity: 100%;
+    font-size: 2rem;
+}
+
 .btn{
     padding: 1rem;
     border-radius: 8px;
@@ -220,7 +232,7 @@ picture{
 .information{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 0.7fr 1fr 0.7fr;
+    grid-template-rows: 1fr 0.4fr 1fr 0.4fr;
     justify-items: center;
 }
 
@@ -237,13 +249,15 @@ picture{
 
 .information>p{
     min-width: 250px;
-    margin-left: 100px;
-    margin-right: 100px;
-    font-family: inter;
-    font-size: 1.2rem;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: inter-medium;
+    font-size: 2rem;
     margin-top: 20px;
     margin-bottom: 20px;
     overflow: hidden;
+    color: black;
+    
 }
 
 #information1{
@@ -315,6 +329,10 @@ picture{
 
 }
 
+.menu a{
+    margin: auto;
+}
+
 .menu>button{
     padding-left: 45px;
     padding-right: 45px;
@@ -376,8 +394,13 @@ footer>p{
     display: flex;
     justify-content: center;
     margin: 5px;
-    font-family: inter;
+    font-family: inter-extrabold;
+    color: white;
 }
+#phonenum{
+    color: orange;
+}
+
 .icon-group{
     display: flex;
     flex-direction: row;
