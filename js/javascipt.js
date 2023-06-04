@@ -26,3 +26,7 @@ function slide_pic_back(){
     cur_pic.src = slide[i];
     return
 }
+
+function scroll_down(){
+    window.location.hash = "#menu"
+}

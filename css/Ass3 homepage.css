@@ -231,6 +231,8 @@ picture{
     border-radius: 20%;
     border: 10px solid white;
     object-fit: cover;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
 }
 
 .information>p{
@@ -309,6 +311,8 @@ picture{
     border: 20px solid white;
     display: block;
     margin: auto;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
 }
 
 .menu>button{
@@ -358,6 +362,8 @@ picture{
     width: 350px;
     border: 20px solid white;
     margin: 10px;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
 }
 
 footer{
