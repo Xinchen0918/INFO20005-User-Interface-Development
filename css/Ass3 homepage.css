@@ -329,6 +329,13 @@ picture{
 
 }
 
+.menu-pic:hover{
+    height: 370px;
+    width: 370px;
+}
+.menu-pic:active{
+    opacity: 70%;
+}
 .menu a{
     margin: auto;
 }
