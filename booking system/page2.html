@@ -3,8 +3,9 @@
 <head>
   <title>Booking</title>
   <link rel="stylesheet" type="text/css" href="page2.css">
+  <script src="../js/javascipt.js"></script>
 </head>
-  <body style="background-color: #F0F0F0;">
+  <body style="background-color:rgba(202, 222, 192, 1)">
     <div>
         <h1>ZERO MODE</h1>
         <hr>
@@ -23,11 +24,17 @@
       <div>Summary</div>
     </div>
 
-    <div class="heading sticky">Booking for 3 people</div>
-
+    <div class="heading">
+      <p id="people"></p>
+    </div>
+      <script>
+        document.getElementById("people").innerHTML = (" Booking for " + number_of_people + " people");
+      </script>
+    
     <div class="option">
         <div class="meal-type">
-            <input type="radio" name="meal" value="Breafast" class="type">Breafast<br>
+          <p>Select Your Meal</p>
+            <input type="radio" name="meal" value="Breakfast" class="type">Breakfast<br>
             <input type="radio" name="meal" value="Lunch"class="type">Lunch<br>
             <input type="radio" name="meal" value="Dinner"class="type">Dinner<br>
             <input type="radio" name="meal" value="Bottomless Brunch"class="type">Bottomless Brunch<br>
@@ -36,6 +43,7 @@
         </div>
         <br>
         <div class="meal-time">
+          <p>Select A Time</p>
             <input type="radio" name="time" value="1:00pm" class="booking-time">1:00pm<br>
             <input type="radio" name="time" value="1:30pm"class="booking-time">1:30pm<br>
             <input type="radio" name="time" value="2:00pm"class="booking-time">2:00pm<br>

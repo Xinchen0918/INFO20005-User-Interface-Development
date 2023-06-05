@@ -3,8 +3,9 @@
 <head>
   <title>Booking</title>
   <link rel="stylesheet" type="text/css" href="page3.css">
+  <script src="../js/javascipt.js"></script>
 </head>
-  <body style="background-color: #F0F0F0;">
+  <body style="background-color: rgba(202, 222, 192, 1);">
     <div>
         <h1>ZERO MODE</h1>
         <hr>
@@ -24,18 +25,20 @@
     </div>
 
     <div class="container">
-        <div class="details">
-            First Name:<input type="text" name="firstname" class="personal-detail"><br>
-            Last Name:<input type="text" name="lastname" class="personal-detail"><br>
-            Mobile:<input type="text" name="mobile" class="personal-detail"><br>
-            Email:<input type="email" name="email" class="personal-detail"><br>
-            Company Name(optional):<input type="text" name="company" class="personal-detail"><br>
+        <div class="details"> 
+            First Name:<input type="text" name="firstname" class="personal-detail" id="firstname"><br>
+            Last Name:<input type="text" name="lastname" class="personal-detail" id="lastname"><br>
+            Mobile:<input type="text" name="mobile" class="personal-detail" id="mobile"><br>
+            Email:<input type="email" name="email" class="personal-detail" id="email"><br>
+            Company Name(optional):<input type="text" name="company" class="personal-detail" id="company"><br>
+            <input type="button" value="submit" name="information" onclick="localStorage.setItem('firstname', get_firstname()), localStorage.setItem('lastname', get_lastname()),localStorage.setItem('mobile', get_mobile()), localStorage.setItem('email', get_email()),localStorage.setItem('company', get_company())">
         </div>
 
         <br>
 
         <div class="note">
-            Note<input type="text" name="note" class="note-text">
+            <p>Note</p>
+            <input type="text" name="note" class="note-text">
         </div>
 <br>
         <div class="requirement">
@@ -70,5 +73,5 @@
 
     <footer>
         <a class="button grey" href="page2.html">BACK</a>
-        <a class="button green" href="page4.html">NEXT</a>
+        <a class="button green" href="page3.5.html">NEXT</a>
       </footer>

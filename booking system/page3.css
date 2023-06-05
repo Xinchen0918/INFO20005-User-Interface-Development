@@ -7,6 +7,10 @@
 }
 h1{
     text-align: center;
+    font-family: inter-i;
+    color: white;
+    border: 3px solid snow;
+    margin: 20px 100px;
 }
 hr{
     
@@ -18,17 +22,13 @@ hr{
     justify-content:space-evenly;
     margin:  10px;
     
-    /* display: grid;
-    grid-template-columns:1fr 1fr 1fr;
-    grid-template-rows:1fr;
-    gap:400px ; */
-    
 }
 .description{
     display: flex;
     justify-content: space-evenly;
     margin: 10px;
     font-size: small;
+    font-weight: bold;
   
 
 }
@@ -62,7 +62,7 @@ hr{
     
 }
 .right{
-    background-color: gray;
+    background-color: rgb(161, 158, 158);
     color: aliceblue;
     border-radius: 50%;
     padding: 5px;
@@ -73,44 +73,51 @@ hr{
 .container{
     display: flex;
     flex-wrap: wrap;
+    gap:20px;
 }
 .details{
     width: 400px;
-    height: 400px;
+    height: 350px;
     border: 3px solid white;
     background-color:white;
     font-weight: bold;
+    box-shadow: 10px 10px rgba(143, 166, 132, 1);
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items:center
 }
 .personal-detail{
-    margin: 5px;
-    padding: 2px;
-    
-    
+    margin: 0;
+    padding: 2px; 
+}
+p{
+    color: #a4bc4b;
+    margin-left: 10px;
 }
 .note{
     width: 400px;
-    height: 400px;
+    height: 300px;
     border: 3px solid white;
     background-color:white;
     font-weight: bold;
+    box-shadow: 10px 10px rgba(143, 166, 132, 1);
 }
 .note-text{
-    padding: 170px 100px;
+    padding: 100px 100px;
 }
 .requirement{
     width: 400px;
-    height: 400px;
+    height: 300px;
     border: 3px solid white;
     background-color:white;
     font-weight: bold;
     margin: 0;
+    box-shadow: 10px 10px rgba(143, 166, 132, 1);
 }
 .special-requirements{
-    margin: 15px;
+    margin: 9px;
 }
 
 

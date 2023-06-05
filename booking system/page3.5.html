@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Booking</title>
+  <link rel="stylesheet" type="text/css" href="page4.css">
+  <script src="../js/javascipt.js"></script>
+</head>
+  <body style="background-color: rgba(202, 222, 192, 1);">
+    <div>
+        <h1>ZERO MODE</h1>
+        <hr>
+    </div>
+    <div class="container">
+      <div class="circle left">1</div>
+  
+      <div class="circle center">2</div>
+     
+      <div class="circle right">3</div>
+    </div>
+
+    <div class="description">
+      <div>Booking</div>
+      <div>Your details</div>
+      <div>Summary</div>
+    </div>
+
+    <div class="confirmation">
+        <h2>Confirmation</h2>
+        <p id="people"></p>
+        <p id="firstname"></p>
+        <p id="lastname"></p>
+        <p id="mobile"></p>
+        <p id="email"></p>
+        <p id="company"></p>
+        <p>booking number: 20xx32389894343xx8989</p>
+
+        <script>
+          document.getElementById("people").innerHTML = (" Booking for " + number_of_people + " people");
+          document.getElementById("firstname").innerHTML = ("First Name: " + First_Name);
+          document.getElementById("lastname").innerHTML = ("Last Name: " + Last_Name);
+          document.getElementById("mobile").innerHTML = ("Mobile: " + Mobile);
+          document.getElementById("email").innerHTML = ("Email: " + Email);
+          document.getElementById("company").innerHTML = ("Company: " + Company);
+        </script>
+    </div>
+
+
+
+
+    <footer>
+        <a class="button grey" href="page3.html">BACK</a>
+        <a class="button green" href="page4.html">NEXT</a>
+      </footer>

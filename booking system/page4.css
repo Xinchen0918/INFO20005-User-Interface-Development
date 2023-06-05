@@ -8,22 +8,30 @@
 }
 h1{
     text-align: center;
+    font-family: inter-i;
+    color: white;
+    border: 3px solid snow;
+    margin: 20px 100px;
 }
+
 hr{
     
     border: 1px solid #88984C;
 }
 
+
+
+h2{
+    padding-top: 20px;
+    font-size: 36px;
+}
+p{
+    color: black;
+}
 .container{
     display: flex;
     justify-content:space-evenly;
     margin:  10px;
-    
-    /* display: grid;
-    grid-template-columns:1fr 1fr 1fr;
-    grid-template-rows:1fr;
-    gap:400px ; */
-    
 }
 .description{
     display: flex;
@@ -99,14 +107,15 @@ footer{
 .confirmation{
     background-color: white;
     width:auto;
-    height: 50%;
+    height: auto;
     text-align: center;
     margin: 10px 20px;
-    line-height: 18px;
+    line-height: 30px;
     font-weight: bold;
     color: #88984C;
     font-size: large;
     padding:0 0 5px 0 ;
+    box-shadow: 20px 20px rgba(143, 166, 132, 1);
     
    
     

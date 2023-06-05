@@ -8,7 +8,12 @@
 }
 h1{
     text-align: center;
+    font-family: inter-i;
+    color: white;
+    border: 3px solid snow;
+    margin: 20px 100px;
 }
+
 hr{
     
     border: 1px solid #88984C;
@@ -30,6 +35,7 @@ hr{
     justify-content: space-evenly;
     margin: 10px;
     font-size: small;
+    font-weight: bold;
   
 
 }
@@ -53,7 +59,7 @@ hr{
     
 }
 .center{
-    background-color: grey;
+    background-color: rgb(161, 158, 158);
     color: aliceblue;
     border-radius: 50%;
     padding: 5px;
@@ -63,7 +69,7 @@ hr{
     
 }
 .right{
-    background-color: gray;
+    background-color: rgb(161, 158, 158);
     color: aliceblue;
     border-radius: 50%;
     padding: 5px;
@@ -71,32 +77,32 @@ hr{
     height: 30px;
     
 }
-.heading{
+#people{
     background-color: white;
     width:auto;
-    height: 80px;
+    height: 50px;
     text-align: center;
     padding: 5px;
-    margin: 0 auto;
-    line-height: 80px;
+    margin: 0 20px;
+    line-height: 50px;
     font-weight: bold;
     color: #88984C;
     font-size: x-large;
+    box-shadow: 10px 10px rgba(143, 166, 132, 1);
+  
 
 }
-/* .sticky{
-    position: fixed;
-    top: 0;
-    width: 100%; */
-/* } */
+
 .option{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin-top: 50px;
+    margin-top: 40px;
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 90px;
+    gap: 20px;
+    
 }
 
 .meal-type{
@@ -105,11 +111,16 @@ hr{
     border: 3px solid white;
     background-color:white;
     font-weight: bold;
-   
-   
+    box-shadow:20px 20px rgba(143, 166, 132, 1);
 }
 .type{
-    margin: 18px 15px;
+    margin: 12px 15px;
+}
+
+p{
+    color: #a4bc4b;
+    margin-left: 20px;
+    font-size: larger;
 }
 .meal-time{
     width: 500px;
@@ -118,11 +129,12 @@ hr{
     background-color:white;
     font-weight: bold;
     display: inline-block;
+    box-shadow:20px 20px rgba(143, 166, 132, 1)
     
 
 }
 .booking-time{
-    margin: 10px 15px;
+    margin: 5px 15px;
     
 
 }
